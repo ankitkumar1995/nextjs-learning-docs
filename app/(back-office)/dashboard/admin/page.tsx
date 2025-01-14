@@ -1,4 +1,5 @@
 import UsersCard from "@/app/components/cards/UsersCard";
+import EventCalendar from "@/app/components/EventCalendar";
 import React from "react";
 
 const AdminPage = () => {
@@ -12,7 +13,9 @@ const AdminPage = () => {
         <UsersCard type="parnet" />
         <UsersCard type="staff" />
       </div>
-      <div className="w-full lg:w-1/3"></div>
+      <div className="w-full lg:w-1/3 flex flex-col gap-8">
+        <EventCalendar />
+      </div>
     </div>
   );
 };
